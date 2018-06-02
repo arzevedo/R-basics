@@ -35,3 +35,13 @@ dados %>% filter (Q1>20,Q9>=6)
 #FUNÇÃO SLICE
 slice(dados,1:10)
 dados %>% slice (1:10)
+
+#FUNÇÃO ARRANGE
+dados %>% 
+  arrange(Q7)
+dados %>% 
+  arrange(desc(Q7)) # A função desc() inverte a ordem do arranjo, deixando ele decrescente
+dados %>% 
+  arrange(Q7,Q6)
+dados %>% 
+  arrange(desc(Q7),Q9)
